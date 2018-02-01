@@ -1,0 +1,7 @@
+1)Start Oracle
+2)Login into ur acc username and pwd
+3)Select SQL workshop tab
+4)select utilities
+5)Select Data workshop
+6)Under Data load select text load
+7)there u go :)
