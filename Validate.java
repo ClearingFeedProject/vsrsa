@@ -25,7 +25,7 @@ public class Validate
 
 	public static boolean validateDate(String tdate)
 	{
-		if(tdate.length()==10)//length of input shud b 8
+		if(tdate.length()==10)//length of input shud b 10
 		{
 			//get current date
 		    Date date = Calendar.getInstance().getTime();
@@ -90,7 +90,7 @@ public class Validate
 			return false;
 		}
 	}
-	public static void main(String[] args) 
+/*	public static void main(String[] args) 
 	{
 		System.out.println("\n___Transaction___");
 		System.out.println("111111111111 - "+validateAccount("111111111111"));
@@ -119,4 +119,4 @@ public class Validate
 		System.out.println("12-05-2018 - "+validateDate("12-05-18"));
 		System.out.println("02-02-2018 - "+validateDate("02-02-2018"));//will work only for todays date i.e date on ur system
 	}
-}
+*/}
