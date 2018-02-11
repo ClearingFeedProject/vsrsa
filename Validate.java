@@ -1,6 +1,5 @@
 package clearing.feed;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -25,16 +24,22 @@ public class Validate
 
 	public static boolean validateDate(String tdate)
 	{
-		if(tdate.length()==10)//length of input shud b 8
+		if(tdate.length()==10)//length of input shud b 10
 		{
 			//get current date
 		    Date date = Calendar.getInstance().getTime();
-	
+		    System.out.println("-------uuuu> "+date);
 		    // Display a date in day, month, year format
-		    DateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+		    SimpleDateFormat formatter = new SimpleDateFormat("dd-mm-yyyy");
 		    String today = formatter.format(date);
+		    
+			System.out.println(tdate + "          "+today);
+
 			if(today.equalsIgnoreCase(tdate))
+			{
 				return true;
+			}
+				
 			else
 				return false;
 		}
@@ -92,7 +97,7 @@ public class Validate
 	}
 	public static void main(String[] args) 
 	{
-		System.out.println("\n___Transaction___");
+	/*	System.out.println("\n___Transaction___");
 		System.out.println("111111111111 - "+validateAccount("111111111111"));
 		System.out.println("1111111 - "+validateAccount("11111111"));
 		System.out.println("1111111*** - "+validateAccount("1111111***"));
@@ -113,7 +118,7 @@ public class Validate
 		System.out.println("\n___Name(either payer or payee)___");
 		System.out.println("Agrawal Vidhi123 - "+validateAccount("Agrawal Vidhi123"));
 		System.out.println("Empty - "+validateAccount(""));
-		System.out.println("*** - "+validateAccount("***"));
+		System.out.println("*** - "+validateAccount("***"));*/
 		
 		System.out.println("\n___Date___");
 		System.out.println("12-05-2018 - "+validateDate("12-05-18"));
