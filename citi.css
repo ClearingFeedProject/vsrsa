@@ -1,0 +1,33 @@
+table , th ,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+th , td{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.button-cs{
+    position: absolute;
+    
+}
+.wrapper{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#search{
+    width: 20em;
+    height: 5em;
+}
+#myProgress {
+    width: 80%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}
